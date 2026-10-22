@@ -205,8 +205,9 @@ def run_long_term_sandbox(total_generations=500):
       break
 
   total_elapsed = time.time() - start_time
-  print(f"=== Simulation Ended. Total Elapsed Time: {total_elapsed:.2f}s ===")
-
+  print(f"=== Simulation Ended ===")
+  print(f"Generations Executed : {gen}")
+  print(f"Execution Time       : {total_elapsed:.4f} seconds")
 
 if __name__ == "__main__":
   run_long_term_sandbox(total_generations=100000)
