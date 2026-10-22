@@ -7,9 +7,10 @@ A zero-dependency, ultra-fast simulation engine written strictly in **pure Pytho
 ## 🚀 Key Features
 
 - **Zero-Dependency Architecture**: 100% pure Python execution without heavy external AI or simulation frameworks.
-- **Ultra-High Performance**: Executes tens of thousands of generations in seconds (e.g., 500 generations in ~0.04s).
+- **Ultra-High Performance**: Executes tens of thousands of generations in seconds (e.g., over 24,000 generations in ~1 second).
 - **Dynamic Context Compression (Memory Pruning)**: KV-Cache-like memory management preventing state bloat over long horizons.
-- **Systemic Circuit-Breaker**: Imperial Granary mechanism for central taxation and emergency agent relief.
+- **9:1 Resource Distribution**: Dynamically allocates resources based on fitness ranks, channeling major boosts to the top 10% elite agents to drive evolutionary selection.
+- **The Elder Protocol**: An anti-extinction fail-safe mechanism that triggers mutation and backup seed derivation when the population drops down to a single survivor.
 
 ---
 
