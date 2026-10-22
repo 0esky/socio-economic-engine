@@ -55,6 +55,7 @@ def run_long_term_sandbox(total_generations=500):
 
   print("=== Sandbox Initialized: Pure Logic Execution ===")
   start_time = time.time()
+  is_extinct = False
 
   for gen in range(1, total_generations + 1):
     gen_start_time = time.process_time()
@@ -186,28 +187,19 @@ def run_long_term_sandbox(total_generations=500):
 
     # Statistical Metrics Calculation
     pop_count = len(population)
-    total_tokens = sum(len(a.memory) for a in population)
-    gen_cpu_time = (time.process_time() - gen_start_time) * 1000
-
-    status_tag = ""
-    if is_historical_plague_gen:
-      status_tag += " # PLAGUE"
-    if elder_triggered:
-      status_tag += " # ELDER_PROTOCOL"
-
-    #print(
-    #    f"Gen {gen:03d} | Pop: {pop_count:02d} | Tokens:"
-    #    f" {total_tokens:03d} | CPU Time: {gen_cpu_time:.2f}ms{status_tag}"
-    #)
 
     if pop_count == 0:
-      print(f"# EXTINCT at Gen {gen}")
+      is_extinct = True
       break
 
   total_elapsed = time.time() - start_time
-  print(f"=== Simulation Ended ===")
-  print(f"Generations Executed : {gen}")
+  print("=== Simulation Ended ===")
+  if is_extinct:
+    print(f"Termination Reason   : EXTINCT at Gen {gen}")
+  else:
+    print(f"Generations Executed : {gen}")
   print(f"Execution Time       : {total_elapsed:.4f} seconds")
+
 
 if __name__ == "__main__":
   run_long_term_sandbox(total_generations=100000)
