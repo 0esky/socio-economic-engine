@@ -19,10 +19,9 @@ Clone the repository and run the engine locally:
 
 ```bash
 # Clone the repository
-git clone https://github.com/0esky/socio-economic-engine.git
+git clone [https://github.com/0esky/socio-economic-engine.git](https://github.com/0esky/socio-economic-engine.git)
 # Navigate to directory
 cd socio-economic-engine
 
 # Run the V1 engine
 python sandbox_v1.py
-![V1 Execution Result](https://github.com/user-attachments/assets/31169de3-56b0-48f3-b341-9072159e1e4f)
