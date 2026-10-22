@@ -25,4 +25,4 @@ cd socio-economic-engine
 
 # Run the V1 engine
 python sandbox_v1.py
-<img width="455" height="123" alt="image" src="https://github.com/user-attachments/assets/31169de3-56b0-48f3-b341-9072159e1e4f" />
+![V1 Execution Result](https://github.com/user-attachments/assets/31169de3-56b0-48f3-b341-9072159e1e4f)
